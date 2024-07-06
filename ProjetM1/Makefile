@@ -19,8 +19,8 @@ cgroup_limit.o: cgroup_limit.c cgroup_limit.h
 
 clean:
 	rm -f $(OBJS) $(TARGET)
-	
+
 mount:
 	sudo mount -o remount,rw /sys/fs/cgroup/
-	sudo cgcreate -g cpu,memory:stress1
+	sudo cgcreate -g cpu,memory:tst
 
