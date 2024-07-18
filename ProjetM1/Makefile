@@ -22,5 +22,5 @@ clean:
 
 mount:
 	sudo mount -o remount,rw /sys/fs/cgroup/
-	sudo cgcreate -g cpu,memory:tst
+
 
